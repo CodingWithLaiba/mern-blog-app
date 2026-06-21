@@ -5,8 +5,8 @@ export default function Header() {
     <div className="flex justify-between">
       <h3 className="flex-1 font-bold text-4xl">Blog App</h3>
       <ul className="flex gap-3 ">
-       <Link> <li className="text-xl font-bold cursor-pointer">Home</li></Link>
-       <Link> <li className="text-xl font-bold cursor-pointer">Add Blog</li></Link>
+       <Link to={'/'}> <li className="text-xl font-bold cursor-pointer">Home</li></Link>
+       <Link to={'/add-blog'}> <li className="text-xl font-bold cursor-pointer">Add Blog</li></Link>
       </ul>
     </div>
   );
