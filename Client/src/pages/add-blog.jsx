@@ -1,5 +1,5 @@
   import { useContext, useEffect } from "react";
-  import { GlobalContext } from "../../context";
+  import { GlobalContext } from "../context/index";
   import axios from "axios";
   import { useNavigate, useLocation } from "react-router-dom";
 
