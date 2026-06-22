@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const express = require("express");
 const blogRouter = express.Router();
 
 const {
@@ -10,7 +10,7 @@ const {
 
 blogRouter.get("/", fetchListOfBlogs);
 blogRouter.post("/add", addNewBlog);
-blogRouter.put("/update/:id", deleteBlog);
-blogRouter.delete("/delete/:id", updateBlog);
+blogRouter.put("/update/:id", updateBlog);
+blogRouter.delete("/delete/:id", deleteBlog);
 
 module.exports = blogRouter;
