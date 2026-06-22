@@ -8,6 +8,7 @@ export default function GlobalState({ children }) {
     title: "",
     description: "",
   });
+  const [isEdit, setIsEdit] = useState(false);
   const [blogList, setBlogList] = useState([]);
   const [pending, setPending] = useState(false);
   return (
@@ -15,6 +16,7 @@ export default function GlobalState({ children }) {
       value={{
         formData,
         setFormData,
+        isEdit, setIsEdit ,
         pending,
         setPending,
         blogList,
