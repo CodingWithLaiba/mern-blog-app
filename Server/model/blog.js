@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const blodSchema = new Schema({
+const blogSchema = new Schema({
   title: {
     type: String,
   },
   description: {
     type: String,
   },
-  sata:{
+  data:{
     type: Date,
     default: Date.now
   }
